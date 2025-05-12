@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Divyansh Tyagi - Full Stack Developer Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f7f9fc;
+      color: #1e1e2f;
+      padding: 40px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      background: white;
+      margin: auto;
+      padding: 40px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      position: relative;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      border-bottom: 2px solid #eaeaea;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #007bff;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #007bff;
+      margin-bottom: 5px;
+    }
+    .about {
+      margin: 10px 0 15px;
+      font-size: 1rem;
+      color: #555;
+    }
+    section {
+      margin: 30px 0 25px;
+    }
+    h2 {
+      border-left: 5px solid #007bff;
+      padding-left: 10px;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .highlight {
+      font-weight: 600;
+      color: #222;
+      display: block;
+      margin-bottom: 3px;
+    }
+    .subsection {
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px dashed #eaeaea;
+    }
+    .subsection:last-child {
+      border-bottom: none;
+    }
+    .link {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .link:hover {
+      text-decoration: underline;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .skill h4 {
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    .skill p {
+      margin: 0;
+      color: #555;
+    }
+    .skill-bar {
+      height: 10px;
+      background: #e0e0e0;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+    .skill-level {
+      height: 100%;
+      background: #007bff;
+      border-radius: 5px;
+      color: white;
+      font-size: 8px;
+      text-align: right;
+      padding-right: 5px;
+      line-height: 10px;
+    }
+    .certificate-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+    .certificate-item {
+      background: #f7f9fc;
+      padding: 10px 15px;
+      border-radius: 8px;
+      border-left: 3px solid #007bff;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9em;
+      font-style: italic;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #eaeaea;
+    }
+    @media print {
+      body {
+        padding: 0;
+        background: white;
+      }
+      .container {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 20px;
+        max-width: 100%;
+        page-break-after: avoid;
+      }
+      section {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="profile.jpg" alt="Divyansh Tyagi" class="profile-pic" />
+      <div>
+        <h1>Divyansh Tyagi</h1>
+        <div class="about">
+          Full Stack Developer with hands-on experience building web and mobile applications using modern JavaScript frameworks. Currently pursuing a Bachelor's in Computer Science with an 8.7 GPA. Passionate about creating efficient, user-friendly solutions with clean code. Completed 200+ hours of specialized training in web development technologies and earned multiple certifications. Strong collaborator with experience working in team environments.
+        </div>
+        <p>
+          <i class="fas fa-envelope"></i> dtdivyansh1302@gmail.com | 
+          <i class="fas fa-phone"></i> +91 7530851175 
+          <br>
+          <a class="link" href="https://github.com/divyansh-tyagi"><i class="fab fa-github"></i> GitHub</a> | 
+          <a class="link" href="https://www.linkedin.com/in/divyansh-tyagi-3b51a620b"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- <section class="section">
+      <h2>Technical Proficiency</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>Frontend Development</h4>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 85%;">85%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <h4>Backend Development</h4>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 75%;">75%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <h4>Mobile Development</h4>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 70%;">70%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <h4>Database Management</h4>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 80%;">80%</div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="section">
+      <h2>Technology Stack</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>HTML, CSS, JavaScript, TypeScript</h4>
+          <p>Skilled in building responsive and dynamic web interfaces.</p>
+        </div>
+        <div class="skill">
+          <h4>React Native</h4>
+          <p>Skilled in developing cross-platform mobile applications.</p>
+        </div>
+        <div class="skill">
+          <h4>React.js</h4>
+          <p>Skilled in React.js for developing dynamic, component-based user interfaces with efficient state management.</p>
+        </div>
+        <div class="skill">
+          <h4>Node.js & Express.js</h4>
+          <p>Proficient in building scalable backend services and RESTful APIs.</p>
+        </div>
+        <div class="skill">
+          <h4>MongoDB</h4>
+          <p>Proficient in designing and managing databases for scalable data storage.</p>
+        </div>
+        <div class="skill">
+          <h4>Next.js</h4>
+          <p>Proficient in Next.js for building performant, SEO-friendly React applications with server-side rendering. </p>
+        </div>
+        <div class="skill">
+          <h4>Bootstrap & Tailwind CSS</h4>
+          <p>Proficient in creating responsive and custom designs.</p>
+        </div>
+        <div class="skill">
+          <h4>Postman (API Testing)</h4>
+          <p>Proficient in POSTMAN for API testing & documentation.</p>
+        </div>
+        <div class="skill">
+          <h4>AWS</h4>
+          <p>Skilled in using AWS services for cloud-based applications.</p>
+        </div>
+        <div class="skill">
+          <h4>Git & GitHub</h4>
+          <p>For version control, code collaboration and project management.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="subsection">
+        <span class="highlight">Apollo247-Inspired Doctor Discovery Platform</span>
+        <span><a class="link" href="https://doctor-listing-app-1-1v33nbbkz.vercel.app/">Vercel Live Demo</a> | Next.js, MongoDB, REST API |</span>
+        <span>Built a clone of Apollo247's destination page with functional filters/pagination | Implemented Next.js ISR for SEO and MongoDB Atlas for doctor data management | Deployed full-stack solution on Vercel</span>
+      </div>
+      <div class="subsection">
+        <span class="highlight">Own-Web-Server</span>
+        <span><a class="link" href="https://github.com/divyansh-tyagi/Own-Web-Server-Using-Node.js">GitHub</a> | Node.js, POSTMAN |</span>
+        <span>Created a secure local web server with SSL certification, handling 100+ concurrent requests. Tested endpoints with POSTMAN achieving 98% API reliability.</span>
+      </div>
+      <div class="subsection">
+        <span class="highlight">Numerology-App</span>
+        <span><a class="link" href="https://github.com/divyansh-tyagi/NumerologyAppUsingNodeJS">GitHub</a> | Node.js |</span>
+        <span>A Node.js CLI tool for numerology using DOB and Hugging Face's AI API to interpret results. Processed 100+ calculations with 95% accuracy.</span>
+      </div>
+      <div class="subsection">
+        <span class="highlight">Finance Tracker</span>
+        <span><a class="link" href="https://divyansh-tyagi.github.io/finance-tracker-app/">Live Demo</a> | HTML, CSS, JavaScript |</span>
+        <span>Helps users manage finances with income/expense logs and analytics. Reduced manual calculation time by 80% for test users through automated tracking.</span>
+      </div>
+      <div class="subsection">
+        <span class="highlight">Joke-App</span>
+        <span><a class="link" href="https://divyansh-tyagi.github.io/Joke-App/">Live Demo</a> | React.js |</span>
+        <span>A joke-fetching app using React.js which displays a random joke from an API on button click. Implemented efficient state management and error handling.</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Internship Course</h2>
+      <div class="subsection">
+        <span class="highlight">Software Developer Trainee - Brain Mentors Pvt Ltd</span>
+        <span class="date">Aug 2024 – May 2025 | Ghaziabad</span>
+        <span>Completed intensive training in full-stack development covering HTML, CSS, JS, TS, React.js, Node.js, Express.js, MongoDB, Git, GitHub, and AWS. Contributed to 3 team projects with 100% on-time delivery.</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Educational Overview</h2>
+      <ul>
+        <li><strong>B.Tech in Computer Science Engineering</strong> - JIMS, Greater Noida <span class="date">(Dec 2021 – June 2025)</span> - GPA: 8.7</li>
+        <li><strong>Senior Secondary (12th)</strong> - KV No.2 Delhi Cantt <span class="date">(Apr 2020 – Mar 2021)</span> - 79.5%</li>
+        <li><strong>High School (10th)</strong> - KV No.2 Delhi Cantt <span class="date">(Apr 2017 – Mar 2018)</span> - 75%</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <div class="certificate-list">
+        <div class="certificate-item">
+          <strong>Infosys Java Programming Fundamentals</strong>
+          <div class="date">Jun 2023</div>
+        </div>
+        <div class="certificate-item">
+          <strong>Python Foundation Certification (Proctored)</strong>
+          <div class="date">Sept 2023</div>
+        </div>
+        <div class="certificate-item">
+          <strong>Online Summer Training in Python</strong>
+          <div class="date">Jul 2023</div>
+        </div>
+        <div class="certificate-item">
+          <strong>Infosys Basics of Python</strong>
+          <div class="date">Jul 2023</div>
+        </div>
+        <div class="certificate-item">
+          <strong>Microsoft Azure ML & Cloud Services (123 Badges)</strong>
+          <div class="date">Apr 2022</div>
+        </div>
+        <div class="certificate-item">
+          <strong>Udemy Web Development Bootcamp (Angela Yu)</strong>
+          <div class="date">Aug 2024</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <a href="https://github.com/divyansh-tyagi" class="link" style="margin: 0 10px;"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/divyansh-tyagi-3b51a620b" class="link" style="margin: 0 10px;"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <!-- <a href="https://yourportfolio.com" class="link" style="margin: 0 10px;"><i class="fas fa-globe"></i> Portfolio</a> -->
+    </footer>
+  </div>
+</body>
+</html>
